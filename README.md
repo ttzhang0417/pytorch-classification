@@ -49,7 +49,7 @@ $$
 
 算法使用python实现，使用的环境为：python3.6.8、pycharm2018.3.7、cuda10.1，使用的python第三方库为torch1.8.0+cu111、matplotlib3.3.4、torchvision0.9.1+cu111、tqdm4.64.1等。
 
-程序共包含4个文件，分别为model.py、train.py、predict.py和class_indices.json。
+程序共包含5个文件，分别为model.py、train.py、predict.py和class_indices.json和myConvNet.py。
 
 ### model.py
 
@@ -339,6 +339,10 @@ with open(json_path, "r") as f:
 ```
 
 torch.load()加载模型训练后保存的断点，接着从断点中获取保存的model_state_dict进行加载。model.eval()进入预测模式。将待预测的图片img放入模型中进行预测，使用softmax函数将张量的每个元素缩放到区间(0, 1)且和为1，这样就能输出模型预测该图像对应45类标签的概率。最后使用torch.argmax()函数取出最大的概率，即为该图片的预测分类。
+
+### myConvNet.py
+
+定义了训练函数train_model()和预测函数predict_model()，其中train_model()与train.py中的训练过程类似，主要区别在于train_model()将训练集按照8：2的比例划分为训练集和验证集。predict_model()区别于predict.py，后者只能预测一个图片，而前者能够计算整个测试集的预测精确度，并且计算并可视化出混淆矩阵，便于分析分类器分类效果。
 
 ## 算法结果
 

@@ -1,0 +1,51 @@
+                      precision    recall  f1-score   support
+
+               apron       0.63      0.61      0.62       275
+           bare-land       0.92      0.94      0.93       298
+      baseball-field       0.70      0.85      0.77       112
+    basketball-court       0.74      0.76      0.75       922
+               beach       0.89      0.84      0.86       140
+              bridge       0.69      0.80      0.74       706
+            cemetery       0.70      0.83      0.76      1120
+              church       0.84      0.76      0.80       623
+     commercial-area       0.57      0.75      0.65       781
+              desert       0.99      0.97      0.98       528
+           dry-field       0.94      0.92      0.93       815
+              forest       0.81      0.90      0.85       148
+         golf-course       0.76      0.77      0.77       248
+          greenhouse       0.71      0.73      0.72       392
+             helipad       0.82      0.63      0.72       178
+            ice-land       0.94      0.95      0.95       307
+              island       0.68      0.78      0.73       273
+                lake       0.75      0.58      0.66       183
+              meadow       0.80      0.88      0.84       196
+                mine       0.91      0.82      0.86       265
+            mountain       0.89      0.91      0.90       440
+           oil-field       0.83      0.89      0.86       122
+         paddy-field       0.95      0.97      0.96       496
+                park       0.54      0.68      0.60       638
+         parking-lot       0.63      0.44      0.52       316
+                port       0.73      0.73      0.73       247
+             railway       0.87      0.77      0.82       369
+    residential-area       0.71      0.59      0.64       667
+               river       0.84      0.94      0.89       944
+                road       0.90      0.78      0.84       609
+roadside-parking-lot       0.57      0.40      0.47       142
+           rock-land       0.95      0.84      0.89       856
+          roundabout       0.79      0.83      0.81       543
+              runway       0.62      0.70      0.66       147
+        soccer-field       0.59      0.57      0.58       166
+   solar-power-plant       0.96      0.99      0.97       170
+   sparse-shrub-land       0.96      0.99      0.97       375
+        storage-tank       0.70      0.58      0.63       146
+       swimming-pool       0.89      0.78      0.83       171
+        tennis-court       0.88      0.74      0.80       883
+      terraced-field       0.99      0.95      0.97      1343
+       train-station       0.86      0.62      0.72       386
+             viaduct       0.40      0.19      0.25       183
+        wind-turbine       0.87      0.91      0.89       172
+               works       0.54      0.58      0.56       671
+
+            accuracy                           0.79     19712
+           macro avg       0.78      0.77      0.77     19712
+        weighted avg       0.80      0.79      0.79     19712
